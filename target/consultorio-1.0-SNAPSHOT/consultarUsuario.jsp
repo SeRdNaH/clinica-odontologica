@@ -37,16 +37,16 @@
                                         List<Usuario> usuarios = (List) request.getSession().getAttribute("usuarios");
                                     %>
                                     <tbody>
-                                        <%for (Usuario usuario : usuarios) {%>
+                                        <%for (Usuario usuario1 : usuarios) {%>
                                         <tr>
-                                            <td id="id<%=usuario.getId()%>"><%=usuario.getId()%></td>
-                                            <td><%=usuario.getNombre()%></td>
-                                            <td><%=usuario.getRol()%></td>
+                                            <td id="id<%=usuario1.getId()%>"><%=usuario1.getId()%></td>
+                                            <td><%=usuario1.getNombre()%></td>
+                                            <td><%=usuario1.getRol()%></td>
                                             
                                             <td style="white-space: nowrap;">
                                                 <div class="d-flex justify-content-center">
                                                     <form action="svEliminarUsuario" method="POST" class="mr-2 mb-0">
-                                                        <input type="hidden" name="id" value="<%=usuario.getId()%>">
+                                                        <input type="hidden" name="id" value="<%=usuario1.getId()%>">
 
                                                         <button type="submit" class="btn btn-danger btn-sm px-2">
                                                             <i class="fas fa-trash-alt mr-1"></i> Eliminar
@@ -54,7 +54,7 @@
                                                     </form>
 
                                                     <form action="svEditarUsuario" method="GET" class="mb-0">
-                                                        <input type="hidden" name="id" value="<%=usuario.getId()%>">
+                                                        <input type="hidden" name="id" value="<%=usuario1.getId()%>">
 
                                                         <button type="submit" class="btn btn-primary btn-sm px-2">
                                                             <i class="fas fa-pencil-alt mr-1"></i> Editar

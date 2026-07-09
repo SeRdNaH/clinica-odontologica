@@ -43,7 +43,7 @@ public class svLogin extends HttpServlet {
             response.sendRedirect("index.jsp");
         
         } else {
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("loginError.jsp");
         }
     }
     

@@ -11,7 +11,7 @@
     String usuario = (String) sesion.getAttribute("usuario");
     
     if (usuario == null) {
-        response.sendRedirect("sinLogin.jsp");
+        response.sendRedirect("login.jsp");
     }
 %>
 

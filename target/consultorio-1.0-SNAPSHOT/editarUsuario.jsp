@@ -9,7 +9,7 @@
 <%@include file="components/header.jsp"%>
 <%@include file="components/bodyInicio.jsp"%>
 
-<% Usuario usuario = (Usuario) request.getSession().getAttribute("usuario");%>
+<% Usuario usuario1 = (Usuario) request.getSession().getAttribute("usuario");%>
 
 <form class="user" action="svEditarUsuario" method="POST">
 
@@ -25,7 +25,7 @@
                        class="form-control form-control-user"
                        id="nombre"
                        name="nombre"
-                       placeholder="Nombre de usuario" value="<%=usuario.getNombre()%>">
+                       placeholder="Nombre de usuario" value="<%=usuario1.getNombre()%>">
             </div>
 
             <div class="form-group">
@@ -33,7 +33,7 @@
                        class="form-control form-control-user"
                        id="contrasena"
                        name="contrasena"
-                       placeholder="Contraseña" value="<%=usuario.getContrasena()%>">
+                       placeholder="Contraseña" value="<%=usuario1.getContrasena()%>">
             </div>
 
             <div class="form-group">
@@ -41,7 +41,7 @@
                        class="form-control form-control-user"
                        id="rol"
                        name="rol"
-                       placeholder="Rol" value="<%=usuario.getRol()%>">
+                       placeholder="Rol" value="<%=usuario1.getRol()%>">
             </div>
 
             <button class="btn btn-primary btn-user btn-block" type="submit">
