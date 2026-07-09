@@ -15,6 +15,7 @@ servlets/svUsuario.class
 persistencia/TurnoJpaController.class
 com/mycompany/consultorio/JakartaRestConfiguration.class
 logica/Horario.class
+servlets/svLogin.class
 persistencia/UsuarioJpaController.class
 logica/ControladorPersistencia.class
 servlets/svEditarUsuario.class

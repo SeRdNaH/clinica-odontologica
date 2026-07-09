@@ -23,4 +23,5 @@
 /home/alonso/Repositorios/clinica-odontologica/src/main/java/persistencia/exceptions/PreexistingEntityException.java
 /home/alonso/Repositorios/clinica-odontologica/src/main/java/servlets/svEditarUsuario.java
 /home/alonso/Repositorios/clinica-odontologica/src/main/java/servlets/svEliminarUsuario.java
+/home/alonso/Repositorios/clinica-odontologica/src/main/java/servlets/svLogin.java
 /home/alonso/Repositorios/clinica-odontologica/src/main/java/servlets/svUsuario.java

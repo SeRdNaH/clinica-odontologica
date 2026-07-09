@@ -4,6 +4,17 @@
     Author     : alonso
 --%>
 
+<%@page import="logica.Usuario"%>
+<% 
+    HttpSession sesion = request.getSession();
+    
+    String usuario = (String) sesion.getAttribute("usuario");
+    
+    if (usuario == null) {
+        response.sendRedirect("sinLogin.jsp");
+    }
+%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <body id="page-top">
 
@@ -117,7 +128,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><%=request.getSession().getAttribute("usuario")%></span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>

@@ -48,17 +48,17 @@
                         <form class="user" action="svLogin" method="POST">
 
                             <div class="form-group">
-                                <input type="email"
+                                <input type="text"
                                        class="form-control form-control-user"
-                                       id="exampleInputEmail"
-                                       placeholder="Correo electrónico"
-                                       name="correo">
+                                       id="usuario"
+                                       placeholder="Usuario"
+                                       name="usuario">
                             </div>
 
                             <div class="form-group">
                                 <input type="password"
                                        class="form-control form-control-user"
-                                       id="exampleInputPassword"
+                                       id="contrasena"
                                        placeholder="Contraseña"
                                        name="contrasena">
                             </div>
